@@ -1,0 +1,164 @@
+.accordion {
+	padding-right:2rem;
+    display: flex;
+    align-items: center; /* Выравнивание по вертикали */
+    position: relative;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-bottom: 10px; /* Расстояние между кнопками */
+    border-radius: 5px; /* Для закругления углов кнопок */  
+  }
+  .accordion span {
+    flex-grow: 1; /* Текст занимает доступное пространство */
+    padding-right: 25px; /* Отступ для предотвращения наезда на символ "+" */
+}
+  
+  .active, .accordion:hover {
+    background-color: #8d9962;
+    color: #fff;
+  }
+  .accordion  {
+    flex-grow: 2; /* Текст занимает доступное пространство */
+    padding-right: 100px; /* Отступ для предотвращения наезда на символ "+" */
+}
+  
+  .accordion:after {
+    content: '\002B';
+    font-weight: bold;
+    float: right;
+    padding-left:20px;
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 35%;
+    font-size: 16px; /* Размер символа */
+
+
+  
+  
+  }
+  .accordion:hover:after{
+    color: #fff;
+  }
+  .fa-question-circle-o{
+  color: #8d9962;
+  font-size: 30px;
+  padding-right: 10px;
+  }
+  .accordion:hover .fa-question-circle-o {
+  color: #fff;
+  }
+  .active .fa-question-circle-o {
+  color: #fff;
+  }
+  
+  .active:after {
+    content: "\2212";
+    color:#fff;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    line-height: 1.6;
+    border: 0px solid ;
+  }
+  
+  .KKK{
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      color: #000000;
+  }
+  
+  .kusimusButton{
+      color: #fff;
+      padding: 9px 18px;
+      font-size: 12px;
+      font-weight: 400;
+      min-width: 130px;
+      letter-spacing: 0.8px;
+      line-height: 22px;
+      text-transform: capitalize;
+      display: inline-block;
+      background: #65860b;
+      border: 0;
+      border-radius: 50px;
+      text-decoration: none;
+      margin-bottom: 20px;
+  }
+  .kusimusButton:hover {
+      background: #000000;
+  }
+  /* Адаптивность */
+@media (max-width: 768px) {
+    .accordion {
+
+        font-size: 13px;
+        padding: 15px;
+    }
+
+    .fa-question-circle-o {
+        font-size: 24px; /* Уменьшение размера иконки */
+        padding-right: 8px;
+    }
+
+    .accordion:after {
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .panel {
+        padding: 0 15px;
+        line-height: 1.4;
+    }
+
+    .kusimusButton {
+        font-size: 12px;
+        padding: 10px 16px;
+        min-width: 100px;
+    }
+
+    .KKK {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .accordion {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .fa-question-circle-o {
+        font-size: 20px;
+    }
+
+    .accordion:after {
+        right: 8px;
+    }
+
+    .kusimusButton {
+        font-size: 10px;
+        padding: 8px 12px;
+        min-width: 80px;
+    }
+
+    .KKK {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+  }
