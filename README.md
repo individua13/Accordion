@@ -46,10 +46,11 @@ To use or modify this project, follow these steps:
 ## File Structure
 
 ```
-accordion-faq/
+accordion
 ├── index.html      # Main HTML file
 ├── style.css       # CSS for styling
 ├── script.js       # JavaScript for interactivity
+├── LICENSE         # LICENSE
 └── README.md       # Project documentation
 ```
 
