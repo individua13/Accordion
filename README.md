@@ -19,7 +19,7 @@ This project implements an interactive FAQ section using HTML, CSS, and JavaScri
 
 Include a link to a live demo of your project if available:
 
-[Live Demo]([[https://torugurud.ee/github/Accordion/Accordion.html])
+[Live Demo][https://torugurud.ee/github/Accordion/Accordion.html]
 
 ## Installation
 
